@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">テキストカメラ</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_trim_image">TrimImageActivity</string>
+    <string name="title_activity_recognize_result">RecognizeResultActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="activity_mode">ACTIVITY_MODE</string>
+</resources>

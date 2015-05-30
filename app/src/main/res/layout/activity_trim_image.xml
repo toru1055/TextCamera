@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jp.thotta.android.wifipasswordreader.TrimImageActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/trimFrame"
+        android:layout_below="@+id/textViewTouchPosition"
+        android:layout_above="@+id/buttonFixRegion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <jp.thotta.android.wifipasswordreader.TrimmingRectangleView
+            android:id="@+id/trimView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="トリミングしてください"
+        android:id="@+id/textViewTouchPosition"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原画像"
+        android:id="@+id/buttonBackToOriginalBitmap"
+        android:background="@drawable/layout_button"
+        android:textSize="32dp"
+        android:padding="10dp"
+        android:minWidth="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="決定"
+        android:background="@drawable/layout_button"
+        android:id="@+id/buttonFixRegion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="32dp"
+        android:padding="10dp"
+        android:minWidth="150dp" />
+
+
+
+</RelativeLayout>

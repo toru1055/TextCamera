@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".TopActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_button"
+        android:clickable="true"
+        android:id="@+id/buttonWifi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewWifi"
+            android:src="@mipmap/ic_action_wifi"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wi-Fiパスワード"
+            android:id="@+id/textViewWifiTitle"
+            android:textSize="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageViewWifi"
+            android:layout_toEndOf="@+id/imageViewWifi"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wifiパスワードを文字認識"
+            android:id="@+id/textViewWifiDesc"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewWifiTitle"
+            android:layout_toRightOf="@+id/imageViewWifi"
+            android:layout_toEndOf="@+id/imageViewWifi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_button"
+        android:clickable="true"
+        android:id="@+id/buttonUrl"
+        android:layout_below="@+id/buttonWifi"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewUrl"
+            android:src="@mipmap/ic_action_globe"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL"
+            android:id="@+id/textViewUrlTitle"
+            android:textSize="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageViewUrl"
+            android:layout_toEndOf="@+id/imageViewUrl"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URLを文字認識"
+            android:id="@+id/textViewUrlDesc"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewUrlTitle"
+            android:layout_toRightOf="@+id/imageViewUrl"
+            android:layout_toEndOf="@+id/imageViewUrl" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_button"
+        android:clickable="true"
+        android:id="@+id/buttonMail"
+        android:layout_below="@+id/buttonUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewMail"
+            android:src="@mipmap/ic_action_mail"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="メールアドレス"
+            android:id="@+id/textViewMailTitle"
+            android:textSize="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageViewMail"
+            android:layout_toEndOf="@+id/imageViewMail"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="メールアドレスを文字認識"
+            android:id="@+id/textViewMailDesc"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewMailTitle"
+            android:layout_toRightOf="@+id/imageViewMail"
+            android:layout_toEndOf="@+id/imageViewMail" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_button"
+        android:clickable="true"
+        android:id="@+id/buttonTel"
+        android:layout_below="@+id/buttonMail"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewTel"
+            android:src="@mipmap/ic_action_phone_start"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電話番号"
+            android:id="@+id/textViewTelTitle"
+            android:textSize="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageViewTel"
+            android:layout_toEndOf="@+id/imageViewTel"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電話番号を文字認識"
+            android:id="@+id/textViewTelDesc"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewTelTitle"
+            android:layout_toRightOf="@+id/imageViewTel"
+            android:layout_toEndOf="@+id/imageViewTel" />
+    </RelativeLayout>
+
+</RelativeLayout>
