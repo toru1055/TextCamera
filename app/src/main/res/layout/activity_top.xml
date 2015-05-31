@@ -27,9 +27,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wi-Fiパスワード"
+            android:text="@string/wifi_title"
             android:id="@+id/textViewWifiTitle"
-            android:textSize="32dp"
+            android:textSize="30dp"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/imageViewWifi"
             android:layout_toEndOf="@+id/imageViewWifi"
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="wifiパスワードを文字認識"
+            android:text="@string/wifi_desc"
             android:id="@+id/textViewWifiDesc"
             android:textSize="18dp"
             android:layout_below="@+id/textViewWifiTitle"
@@ -68,9 +68,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="URL"
+            android:text="@string/url_title"
             android:id="@+id/textViewUrlTitle"
-            android:textSize="32dp"
+            android:textSize="30dp"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/imageViewUrl"
             android:layout_toEndOf="@+id/imageViewUrl"
@@ -79,7 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="URLを文字認識"
+            android:text="@string/url_desc"
             android:id="@+id/textViewUrlDesc"
             android:textSize="18dp"
             android:layout_below="@+id/textViewUrlTitle"
@@ -109,9 +109,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="メールアドレス"
+            android:text="@string/mail_title"
             android:id="@+id/textViewMailTitle"
-            android:textSize="32dp"
+            android:textSize="30dp"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/imageViewMail"
             android:layout_toEndOf="@+id/imageViewMail"
@@ -120,7 +120,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="メールアドレスを文字認識"
+            android:text="@string/mail_desc"
             android:id="@+id/textViewMailDesc"
             android:textSize="18dp"
             android:layout_below="@+id/textViewMailTitle"
@@ -150,9 +150,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="電話番号"
+            android:text="@string/tel_title"
             android:id="@+id/textViewTelTitle"
-            android:textSize="32dp"
+            android:textSize="30dp"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/imageViewTel"
             android:layout_toEndOf="@+id/imageViewTel"
@@ -161,7 +161,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="電話番号を文字認識"
+            android:text="@string/tel_desc"
             android:id="@+id/textViewTelDesc"
             android:textSize="18dp"
             android:layout_below="@+id/textViewTelTitle"

@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="トリミングしてください"
+        android:text="@string/instruction_trimming"
         android:id="@+id/textViewTouchPosition"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -35,7 +35,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="原画像"
+        android:text="@string/originate_image_button"
         android:id="@+id/buttonBackToOriginalBitmap"
         android:background="@drawable/layout_button"
         android:textSize="32dp"
@@ -48,7 +48,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="決定"
+        android:text="@string/fix_trimmed_image_button"
         android:background="@drawable/layout_button"
         android:id="@+id/buttonFixRegion"
         android:layout_alignParentBottom="true"

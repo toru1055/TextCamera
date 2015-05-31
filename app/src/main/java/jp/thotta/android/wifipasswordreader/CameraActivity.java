@@ -207,12 +207,6 @@ public class CameraActivity extends ActionBarActivity {
             }
         };
         frameLayoutCameraPreview.addView(shutterFrameView);
-
-//        TextView textView = new TextView(this);
-//        textView.setText("四角内に入るように撮影してください");
-//        textView.setTextColor(Color.WHITE);
-//        textView.setTextSize(40);
-//        frameLayoutCameraPreview.addView(textView);
     }
 
     @Override

@@ -182,23 +182,23 @@ public class RecognizeResultActivity extends ActionBarActivity {
         switch (activityMode) {
             case Config.MODE_WIFI:
                 imageButton.setImageResource(R.mipmap.ic_action_wifi);
-                activityName.setText("WIFI設定");
+                activityName.setText(getString(R.string.wifi_button_name));
                 break;
             case Config.MODE_URL:
                 imageButton.setImageResource(R.mipmap.ic_action_globe);
-                activityName.setText("ブラウザ");
+                activityName.setText(getString(R.string.browser_button_name));
                 break;
             case Config.MODE_MAIL:
                 imageButton.setImageResource(R.mipmap.ic_action_mail);
-                activityName.setText("メール");
+                activityName.setText(getString(R.string.mail_button_name));
                 break;
             case Config.MODE_TEL:
                 imageButton.setImageResource(R.mipmap.ic_action_phone_start);
-                activityName.setText("電話");
+                activityName.setText(getString(R.string.phone_button_name));
                 break;
             default:
                 imageButton.setImageResource(R.mipmap.ic_action_wifi);
-                activityName.setText("WIFI設定");
+                activityName.setText(getString(R.string.wifi_button_name));
         }
 
 //        findViewById(R.id.buttonBack).setOnClickListener(onClickBackButton);

@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="対象の画像"
+        android:text="@string/target_image_title"
         android:id="@+id/textViewImageTitle"
         android:background="#ccc"
         android:layout_alignParentTop="true"
@@ -36,7 +36,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="文字認識結果"
+        android:text="@string/recognize_result_title"
         android:id="@+id/textViewEditTitle"
         android:background="#ccc"
         android:layout_below="@+id/imageView"
@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="※誤認識があれば修正してください"
+        android:text="@string/correct_instruction_message"
         android:id="@+id/textViewCorrect"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText" />
@@ -63,7 +63,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="起動するアプリを選択"
+        android:text="@string/select_app_title"
         android:id="@+id/textViewSelectApp"
         android:background="#ccc"
         android:layout_below="@+id/buttonClearText"
@@ -95,7 +95,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="クリア"
+        android:text="@string/clear_button"
         android:id="@+id/buttonClearText"
         android:layout_below="@+id/editText"
         android:layout_alignParentRight="true"
@@ -106,7 +106,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="コピー"
+        android:text="@string/copy_button"
         android:id="@+id/textView2"
         android:layout_below="@+id/buttonWifiSetting"
         android:layout_alignLeft="@+id/buttonCopy"
@@ -118,7 +118,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WIFI設定"
+        android:text="@string/wifi_button_name"
         android:id="@+id/textViewActivityName"
         android:layout_below="@+id/buttonWifiSetting"
         android:layout_alignLeft="@+id/buttonWifiSetting"

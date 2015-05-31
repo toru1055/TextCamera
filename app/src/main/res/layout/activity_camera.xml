@@ -12,22 +12,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="四角内に入るように撮影してください"
+        android:text="@string/instruction_message_rectangle"
         android:textColor="#fff"
-        android:textSize="20dp"
         android:id="@+id/textViewInstruction"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_message_autofocus"
+        android:textColor="#fff"
+        android:id="@+id/textViewInstruction2"
+        android:layout_below="@+id/textViewInstruction"/>
 
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textViewInstruction"
+        android:layout_below="@+id/textViewInstruction2"
         android:layout_above="@+id/buttonShutter"
         android:id="@+id/frameLayoutCamera"
         android:layout_marginBottom="10dp">
-
     </FrameLayout>
 
     <Button
@@ -44,7 +49,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="設定"
+        android:text="@string/setting_title"
         android:background="@drawable/layout_button"
         android:id="@+id/buttonSetting"
         android:layout_alignParentBottom="true"
