@@ -148,7 +148,7 @@ public class CameraActivity extends ActionBarActivity {
                 startActivity(intent);
             } catch(OutOfMemoryError e) {
                 Toast.makeText(CameraActivity.this,
-                        "エラーが発生しました。設定で解像度を下げてください。",
+                        getString(R.string.out_of_memory_message),
                         Toast.LENGTH_SHORT).show();
                 Log.v(TAG, "error");
                 startActivity(new Intent(CameraActivity.this, SettingActivity.class));

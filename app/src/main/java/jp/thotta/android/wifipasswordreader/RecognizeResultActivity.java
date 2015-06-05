@@ -94,7 +94,7 @@ public class RecognizeResultActivity extends ActionBarActivity {
         ClipData cd = new ClipData(new ClipDescription("text_data", mimeType), item);
         ClipboardManager cm = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
         cm.setPrimaryClip(cd);
-        Toast.makeText(this, "クリップボードにコピーしました。", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.on_copy_message), Toast.LENGTH_SHORT).show();
     }
 
     private void startWifiSetting() {
@@ -117,7 +117,7 @@ public class RecognizeResultActivity extends ActionBarActivity {
         } catch(Exception e) {
             e.printStackTrace();
             Log.v(TAG, "ERROR: " + e.getMessage());
-            Toast.makeText(this, "URLをオープンできませんでした。", Toast.LENGTH_SHORT);
+            Toast.makeText(this, getString(R.string.on_url_open_error_message), Toast.LENGTH_SHORT);
         }
     }
 
@@ -130,7 +130,7 @@ public class RecognizeResultActivity extends ActionBarActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.v(TAG, "ERROR: " + e.getMessage());
-            Toast.makeText(this, "メールアドレスにエラーがありました。", Toast.LENGTH_SHORT);
+            Toast.makeText(this, getString(R.string.error_on_mail_address_message), Toast.LENGTH_SHORT);
         }
     }
 
@@ -143,7 +143,7 @@ public class RecognizeResultActivity extends ActionBarActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.v(TAG, "ERROR: " + e.getMessage());
-            Toast.makeText(this, "電話番号にエラーがありました。", Toast.LENGTH_SHORT);
+            Toast.makeText(this, getString(R.string.error_on_phone_number_message), Toast.LENGTH_SHORT);
         }
     }
 

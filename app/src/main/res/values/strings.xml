@@ -35,4 +35,9 @@
     <string name="browser_button_name">ブラウザ</string>
     <string name="mail_button_name">メール</string>
     <string name="phone_button_name">電話</string>
+    <string name="on_copy_message">クリップボードにコピーしました。</string>
+    <string name="on_url_open_error_message">URLをオープンできませんでした。</string>
+    <string name="error_on_mail_address_message">メールアドレスにエラーがありました。</string>
+    <string name="error_on_phone_number_message">電話番号にエラーがありました。</string>
+    <string name="out_of_memory_message">エラーが発生しました。設定で解像度を下げてください。</string>
 </resources>
