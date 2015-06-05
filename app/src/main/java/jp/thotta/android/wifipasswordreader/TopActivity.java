@@ -49,6 +49,10 @@ public class TopActivity extends ActionBarActivity {
                 startCameraActivity(Config.MODE_TEL);
             }
         });
+
+//        AdView mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = Utility.makeAdRequest(this);
+//        mAdView.loadAd(adRequest);
     }
 
     private void startCameraActivity(int mode) {

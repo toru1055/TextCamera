@@ -1,8 +1,11 @@
 package jp.thotta.android.wifipasswordreader;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
+
+import com.google.android.gms.ads.AdRequest;
 
 /**
  * Created by thotta on 15/05/30.
@@ -35,5 +38,14 @@ public class Utility {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         activity.startActivity(intent);
+    }
+
+    public static AdRequest makeAdRequest(Context context) {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(context.getString(R.string.test_device_id_for_ads))
+                .addTestDevice(context.getString(R.string.test_device_id_for_ads2))
+                .addKeyword("文字認識")
+                .build();
+        return adRequest;
     }
 }
