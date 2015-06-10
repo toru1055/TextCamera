@@ -28,10 +28,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
-// TODO: OutOfMemory対応
-// 設定に飛ばすことはできたけど、何かとエラーが残っている（シャッターをクリックしても撮影されない）。
-// このエラーの時はCreateからやり直したいけど、onResumeに全部の処理を持っていくと通常の起動ができなくなる
-// 工夫する必要があるよ。
 public class CameraActivity extends ActionBarActivity {
     private final String TAG = "CameraActivity";
     private Camera camera;
@@ -149,9 +145,11 @@ public class CameraActivity extends ActionBarActivity {
             } catch(OutOfMemoryError e) {
                 Toast.makeText(CameraActivity.this,
                         getString(R.string.out_of_memory_message),
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_LONG).show();
                 Log.v(TAG, "error");
-                startActivity(new Intent(CameraActivity.this, SettingActivity.class));
+                Intent intent = new Intent(CameraActivity.this, SettingActivity.class);
+                intent.putExtra("IS_OUT_OF_MEMORY", true);
+                startActivity(intent);
             }
         }
     };
@@ -168,8 +166,6 @@ public class CameraActivity extends ActionBarActivity {
         Utility.setActionBarWithMode(this, activityMode);
 
         // カメラの設定
-        // TODO: 解像度設定がミスっていると、起動できなくなる件、直す
-        // TODO: どこでException吐くか調べて、Toastでエラー表示後、SettingActivityに飛ばす
         File file = new File(saveDir);
         if (!file.exists()) {
             if (!file.mkdir()) {
@@ -179,7 +175,6 @@ public class CameraActivity extends ActionBarActivity {
         frameLayoutCameraPreview = (FrameLayout)findViewById(R.id.frameLayoutCamera);
         frameLayoutCameraPreview.setOnClickListener(onClickCameraPreview);
 
-        // TODO: ここからTryCatchかな
         cameraView = new SurfaceView(this);
         cameraHolder = cameraView.getHolder();
         cameraHolder.addCallback(cameraHolderCallback);

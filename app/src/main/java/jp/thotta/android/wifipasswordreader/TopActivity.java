@@ -7,6 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 public class TopActivity extends ActionBarActivity {
     private View.OnClickListener onButtonClick = new View.OnClickListener() {
@@ -50,9 +53,9 @@ public class TopActivity extends ActionBarActivity {
             }
         });
 
-//        AdView mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = Utility.makeAdRequest(this);
-//        mAdView.loadAd(adRequest);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = Utility.makeAdRequest(this);
+        mAdView.loadAd(adRequest);
     }
 
     private void startCameraActivity(int mode) {

@@ -22,6 +22,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 public class RecognizeResultActivity extends ActionBarActivity {
     private final String TAG = "RecognizeResultActivity";
@@ -200,6 +203,10 @@ public class RecognizeResultActivity extends ActionBarActivity {
                 imageButton.setImageResource(R.mipmap.ic_action_wifi);
                 activityName.setText(getString(R.string.wifi_button_name));
         }
+
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = Utility.makeAdRequest(this);
+        mAdView.loadAd(adRequest);
 
 //        findViewById(R.id.buttonBack).setOnClickListener(onClickBackButton);
     }

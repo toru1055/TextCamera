@@ -16,6 +16,7 @@ public class SettingActivity extends ActionBarActivity {
     private static final String TAG = "SettingActivity";
     private CameraSizeManager csm;
     private List<CameraSize> sizeList;
+    private boolean isOutOfMemory = false;
 
     private RadioGroup.OnCheckedChangeListener onChangeCheckRadio = new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -31,8 +32,11 @@ public class SettingActivity extends ActionBarActivity {
     private View.OnClickListener onClickFinishButton = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-//            csm.clear();
-            finish();
+            if(isOutOfMemory) {
+                Utility.goToTopActivity(SettingActivity.this);
+            } else {
+                finish();
+            }
         }
     };
 
@@ -40,6 +44,8 @@ public class SettingActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+
+        isOutOfMemory = getIntent().getBooleanExtra("IS_OUT_OF_MEMORY", false);
         // 戻るボタン表示
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
