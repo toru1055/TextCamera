@@ -204,7 +204,7 @@ public class RecognizeResultActivity extends ActionBarActivity {
                 activityName.setText(getString(R.string.wifi_button_name));
         }
 
-        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdView mAdView = (AdView) findViewById(R.id.adView2);
         AdRequest adRequest = Utility.makeAdRequest(this);
         mAdView.loadAd(adRequest);
 

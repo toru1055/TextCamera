@@ -130,13 +130,13 @@
         android:gravity="center_horizontal" />
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ad_unit_id_test">
+        ads:adUnitId="@string/ad_unit_id_recognize_result">
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
